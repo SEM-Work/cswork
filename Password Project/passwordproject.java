@@ -12,6 +12,7 @@ public class passwordproject {
 		String url = kb.next();
 		String pass = createPassword(url);
 		System.out.println("The password for " + url + " is " + pass + ".");
+		kb.close();
 	}
 	
 	public static String createPassword(String x){
@@ -31,7 +32,7 @@ public class passwordproject {
 				siter[i] = Character.toUpperCase(siter[i]);
 			pass += siter[i];
 		}
-		siter = siter.toCharArray();
+		siter = site.toCharArray();
 		for(int i = 0; i < siter.length; i++)
 			pass += "" + alphatonum(siter[i]);
 		String finalpass = alphatonum(tld.charAt(0)) + pass;
