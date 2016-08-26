@@ -6,18 +6,18 @@ ask for site - [Ex myspace.com]
 
 move over letters by 1 value [NZtQbdf] 
 
-add num values of last two letters of original [EX NZtQbdf35] 
+add num values of original [EX NZtQbdf*******] 
 
-add position of first letter in tld [EX .com --> 3NZtQbdf35, .abc --> 1NZtQbdf35]
+add position of first letter in tld [EX .com --> 3NZtQbdf35, .abc --> 1NZtQbdf*******]
 
 -------------------------
 
 Ex passwords:
 
-myspace.com --> MYsPace --> NZtQbdf --> NZtQbdf35 --> 3NZtQbdf0406
+myspace.com --> MYsPace --> NZtQbdf --> NZtQbdf******* --> 3NZtQbdf*******
 
-facebook.com --> FAcEbooK --> GBdFcppL --> GBdFcppL1511 --> 3GBdFcppL1612 
+facebook.com --> FAcEbooK --> GBdFcppL --> GBdFcppL******* --> 3GBdFcppL*******
 
-turmelle.net --> TUrMellE --> UVsNfmmf --> UVsNfmmf125 --> 14UVsNfmmf125 
+turmelle.net --> TUrMellE --> UVsNfmmf --> UVsNfmmf******* --> 14UVsNfmmf*******
 
-pbs.org --> PBs --> QCt --> QCt219 --> 15QCt219
+pbs.org --> PBs --> QCt --> QCt219 --> 15QCt*******
