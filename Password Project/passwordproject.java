@@ -1,3 +1,7 @@
+/**
+*Created by Ethan Helfman and Abhi Bhattaru
+*Get the url of a website and generates a password based on it
+**/
 import java.util.Scanner;
 
 public class passwordproject {
@@ -6,6 +10,12 @@ public class passwordproject {
 		Scanner kb = new Scanner(System.in);
 		System.out.print("Enter website: ");
 		String url = kb.next();
+		createPassword(url);
+		
+	}
+	
+	public static void createPassword(String x){
+		String url = x;
 		url = url.toLowerCase();
 		String site = url.substring(0, url.indexOf('.'));
 		String tld = url.substring(url.indexOf('.') + 1);
@@ -21,7 +31,9 @@ public class passwordproject {
 				siter[i] = Character.toUpperCase(siter[i]);
 			pass += siter[i];
 		}
-		pass += alphatonum(site.charAt(site.length() - 2)) + "" + alphatonum(site.charAt(site.length() - 1));
+		siter = siter.toCharArray();
+		for(int i = 0; i < siter.length; i++)
+			pass += "" + alphatonum(siter[i]);
 		String finalpass = alphatonum(tld.charAt(0)) + pass;
 		System.out.println(finalpass);
 	}
