@@ -2,6 +2,12 @@
 *Created by Ethan Helfman and Abhi Bhattaru
 *Get the url of a website and generates a password based on it
 **/
+
+import java.io.File;
+import java.io.IOException;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class passwordproject {
@@ -36,6 +42,20 @@ public class passwordproject {
 		for(int i = 0; i < siter.length; i++)
 			pass += "" + alphatonum(siter[i]);
 		String finalpass = alphatonum(tld.charAt(0)) + pass;
+		/*start hell
+		siter = finalpass.toCharArray();
+		finalpass = "";
+		for(int i = 0; i < siter.length; i++)
+			finalpass += alphatonum(siter[i]);
+		siter = finalpass.toCharArray();
+		finalpass = "";
+		for(int i = 0; i < siter.length; i++)
+			finalpass += alphatonum(siter[i]);
+		siter = finalpass.toCharArray();
+		finalpass = "";
+		for(int i = 0; i < siter.length; i++)
+			finalpass += alphatonum(siter[i]);
+			*/
 		return finalpass;
 	}
 	
@@ -52,7 +72,8 @@ public class passwordproject {
 	    int k = (int)c;
 	    if(k > 96 && k < 123)
 	        return k - 96;
-	    return -1;
+	    return c;
 	}
 
+	
 }
