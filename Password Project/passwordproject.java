@@ -10,11 +10,11 @@ public class passwordproject {
 		Scanner kb = new Scanner(System.in);
 		System.out.print("Enter website: ");
 		String url = kb.next();
-		createPassword(url);
-		
+		String pass = createPassword(url);
+		System.out.println("The password for " + url + " is " + pass + ".");
 	}
 	
-	public static void createPassword(String x){
+	public static String createPassword(String x){
 		String url = x;
 		url = url.toLowerCase();
 		String site = url.substring(0, url.indexOf('.'));
@@ -35,7 +35,7 @@ public class passwordproject {
 		for(int i = 0; i < siter.length; i++)
 			pass += "" + alphatonum(siter[i]);
 		String finalpass = alphatonum(tld.charAt(0)) + pass;
-		System.out.println(finalpass);
+		return finalpass;
 	}
 	
 	public static boolean ispowtwo(int i) {
